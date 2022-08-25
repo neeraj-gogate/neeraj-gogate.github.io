@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Digital Portfolio - Home </title>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/56889475cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <nav class = "navbar">
+      <ul class="navbar-nav">
+	<li class="nav-item"> <a href="#home" class="nav-link"> <i class="icon fa-regular fa-address-card fa-2x"></i> <span class="link-text"> About Me </span> </a> </li>
+	<li class="nav-item"> <a href="#dp" class="nav-link"> <i class="icon fa-solid fa-folder-open fa-2x"></i> <span class="link-text"> Why Digital Portfolio? </span>  </a> </li>
+	<li class="nav-item"> <a href="#classes" class="nav-link"> <i class="icon fa-solid fa-user-graduate fa-2x"></i> <span class="link-text"> Classes </span>  </a> </li>
+	<li class="nav-item"> <a href="#isp" class="nav-link"> <i class="icon fa-solid fa-diagram-project fa-2x"></i> <span class="link-text"> ISP </span> </a> </li>
+	<li class="nav-item"> <a href="#sources" class="nav-link"> <i class="icon fa-solid fa-link fa-2x"></i> <span class="link-text"> Sources </span> </a> </li>
+      </ul>
+    </nav>
+    <main>
+      <div id="home" class="section">
+	<div id = "home-holder" class="holder">
+	  <h1 style="text-align:center"> Hello I'm Neeraj Gogate! </h1>
+	  <p style="text-align:center"> "I am a student at Allen High School looking to pursue a major in computer science. My favorite programming language is C#, as it is the language that I use to make games in Unity in. Some of the projects I work on are Cram Biggo Development Studios, a game development studio I co-founded and The Vulcan Initiative, a student-led group that creates Virtual Reality Apps for Allen High School."
+	  </p>
+	</div>
+      </div>
+      <div id="dp" class="section">
+	<div id="dp-holder" class="holder">
+	  <h1 style="text-align:center; width:60rem;"> Why have a Digital Portfolio? </h1>
+	  <p style="text-align:center;"> A digital portfolio provides a way to document projects in a clean, concise way. It acts as an easy way to go back and look at projects for reference that may have gotten lost in a folder somewhere, if not documented in some way. It also acts as a way to depict the change and improvement that occurs when coding. A change in problem solving with the gaining of new knowledge often occurs, and the portfolio acts as a way to demonstrate an increase of skill by easily showing how two similar problems are completed in different ways. This can then be shown to employers as a proof of experience in Computer Science. </p>
+	</div>
+      </div>
+      <div id="classes" class="section">
+	<div id="classes-holder" class="holder">
+	  <h1 style="text-align:center; width:60rem;"> Classes </h1>
+	  <div class="class-holder"> <h2 style="text-align:center">Computer Science I </h2> <p style="text-align:center"> This course included the basics of Swift and programming. It provided basic Swift proficiency covering ideas such as counting systems(binary, decimal, hexadecimal, etc.), conditionals, loops, and object-oriented programming. </p> </div>
+	  <div class="class-holder"> <h2 style="text-align:center">Computer Science II </h2> <p style="text-align:center"> This course further expanded on concepts taught in CSI. It leaned more into the Web Development side of programming, with a focus on creating a website through HTML, CSS, and JavaScript. The course also featured recursive systems, through applications in Swift such as Lindenmayer systems. </p> </div>
+	  <div class="class-holder"> <h2 style="text-align:center">AP Calculus BC </h2> <p style="text-align:center"> This course taught me the fundamentals of Calculus, The main topics included limits, derivatives, integrations, differential equations, parametric equations, and sequences/series.
+	  </p> </div>
+	  <div class="class-holder"> <h2 style="text-align:center">AP Physics I </h2> <p style="text-align:center"> This course covered Algebra-Based physics applications in topics such as kinematics, dynamics, circular motion, energy, gravitation, momentum, simple harmonic motion, and rotational motion.  </p> </div> 
+	</div>
+      </div>
+      
+      <div id="isp" class="section">
+	<div id="isp-holder" class="holder">
+	  <h1 style="text-align:center"> ISP </h1>
+	  <h2 style="text-align:center"> Concept </h2>
+	  <p style="text-align:center"> The basic concept behind the ISP was creating a fighting game based on platform fighters such as Super Smash Bros. The game was to feature multiple characters, based on characters from other mediums, who would be able to fight each other with their custom movesets. Players would attempt to knock other players off the map to score a point, and whoever has the most points after a certain amount of time wins. </p>
+	  <h2 style="text-align:center"> Motivation </h2>
+	  <p style="text-align:center"> The reason for creating the game was that it would be quite a tricky project. Fighting games are often very technical and require a lot of intricate parts to be running smoothly. Additionally, the game development process is also pretty fun, so that also contributed to the reason behind making the game.</p>
+	  <h2 style="text-align:center"> Code Snippets </h2>
+	  <img src="image1.png" alt="Hitboxes" style="width:500px;height:350px;align-self:center;">
+	  <p style="text-align:center"> The Hitboxes class functioned as a parent class template for hitboxes. The first function, OnTriggerEnter, would first determine whether there was a collision happening with the object that the hitbox was put on. It would then check to make sure that it is hitting another player’s hurtbox, so that it will know whether or not the opposing player should take damage. If it isn't a player, then the function terminates, but if it is, the OnHit function is activated. The OnHit function would then determine the amount of damage and knockback that should be done.
+	  </p>
+	  <img src="image3.png" alt="PlayerHitboxes" style="width:500px;height:300px; align-self:center;">
+	  <p style="text-align:center"> The PlayerHitboxes class functioned as a child of the Hitboxes class, and inherited its properties. This time instead of simply doing damage if a collision occurs in the OnHit function, the PlayerHitbox checks if the player's hitboxes are active or not. The other player should only get hurt for the duration of the move performed, so there needs to be a check for if the move is active. This is in the form of the SetActive function, which sets the PlayerHitbox active at the start of the move, and the DeActivate function which is called to deactivate the hitbox once the move is finished. </p>
+	  <img src="image2.png" alt="Moves" style="width:500px;height:330px;align-self:center; ">
+	  <p style="text-align:center"> The Move class is used to simulate the movements a character can make to fight the other character. Whenever the specific key is pressed to do the move, the activate function is called. This function triggers the animation to happen, so it is visible which move is occurring, and moves the character however far the move is supposed to move them. It also sets the hitboxes active which need to be active. Lastly, it delays the deactivation of the hitboxes until the move is finished through the use of a Coroutine.</p>
+	  <h2 style="text-align:center"> Conclusion </h2>
+	  <p style="text-align:center"> Overall the game's main hiccups were the fact that the development process was largely taken up by the creation of models, so the amount that could be done on a code level was less than originally hoped. The game runs smoothly overall, and while there isn’t as much balance as a game like this should have, it functions for its purpose.</p>
+	</div>
+      </div>
+      <div id="sources" class="section">
+	<div id="sources-holder" class="holder">
+	  <h1 style="text-align:center"> Sources </h1>
+	  <a style="text-align:center" href="https://fontawesome.com/">Navigation Bar Icons from Font Awesome</a>
+	  <a style="text-align:center" href="https://www.youtube.com/watch?v=biOMz4puGt8&ab_channel=Fireship">Navigation Bar Format from Fireship</a>
+	  <a style="text-align:center" href="w3schools.com">General Info from W3Schools</a>  
+	</div>
+      </div>
+    </main>
+  </body>
+</html>
