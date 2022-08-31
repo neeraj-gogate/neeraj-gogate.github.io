@@ -4,7 +4,7 @@
     <title> Digital Portfolio - Fingerprinting </title>
     <meta charset="UTF-8">
     <script src="https://kit.fontawesome.com/56889475cb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" type="text/css" href="../../index.css"/>
   </head>
   <body>
     <nav class = "navbar">
@@ -12,7 +12,7 @@
 	<li class="nav-item"> <a href="#home" class="nav-link"> <i class="icon fa-solid fa-book fa-2x"></i> <span class="link-text"> Title Page </span> </a> </li>
 	<li class="nav-item"> <a href="#dp" class="nav-link"> <i class="icon fa-solid fa-pen-to-square fa-2x"></i> <span class="link-text"> Essay </span>  </a> </li>
 	<li class="nav-item"> <a href="#classes" class="nav-link"> <i class="icon fa-solid fa-link fa-2x"></i> <span class="link-text"> References </span> </a> </li>
-	<li class="nav-item"> <a href="index.html" class="nav-link"> <i class="icon fa-solid fa-house fa-2x"></i> <span class="link-text"> Home  </span> </a> </li>
+	<li class="nav-item"> <a href="../../index.html" class="nav-link"> <i class="icon fa-solid fa-house fa-2x"></i> <span class="link-text"> Home  </span> </a> </li>
       </ul>
     </nav>
     <main>
@@ -44,7 +44,7 @@
 	  </p>
 	  <p style="text-indent:40px"> While there is no technical way to currently prevent an SSL interception, hashes can be created to look over and verify an SSL certificate, thus detecting an SSL interception. These hashes are complex algorithms which process the SSL certificate to see if it is correct. They can detect minor changes in a certificate change, even down to one bit, as the hash will often change drastically if such a change is made(pictured below). These hashes today use the SHA1(Secure Hashing Algorithm 1) hashing algorithm. These hashes create something called a fingerprint, which allows us to see if there is an SSL interception, as if the SSL was intercepted we can see that the fingerprint is different even if the website looks the same (Fingerprints). Modern browsers such as Google Chrome and Firefox will also allow us to see this, as they will display a “green” indication verifying that a website's connection is legitimate.
 	  </p>
-	  <img src = "fingerprint.svg" alt="Fingerprint"/>
+	  <img src = "../../Images/fingerprint.svg" alt="Fingerprint"/>
 	  <p style="text-indent:40px"> Despite this rigorous testing with hashes, a false-positive test can happen. This would occur whenever a certificate was considered to be spoofed, when it was actually the true valid certificate. On the other hand a false negative could happen and cause the spoofed certificate to be thought of as a valid certificate, when it is clearly not. This would only happen if there was some sort of problem with the browser not receiving intercepts properly, causing the browser to think everything is safe when it's not (Dormann).
 	  </p>
 	  <p style="text-indent:40px"> The biggest problem with spoofing a certificate isn’t necessarily the act itself, but rather the philosophy behind it. Spoofing a certificate can actually prove rather useful, as it brings to attention the problem of being able to exploit and destroy the security that comes with HTTPS connections. Where it gets problematic, however, is the act of doing it in an attempt to monitor someone else’s activities, as that action flies in the face of the original intent behind HTTPS connections, which was to protect privacy. Monitoring someone’s behavior without their consent (which most forms of this type of spoofing are) is a direct violation of someone’s privacy, if not done with some reasonable form of probable cause. It allows people who shouldn’t be seeing certain things to see them with no form of restriction. An example of this can best be seen in the hypothetical situation of a student questioning their religion living on a rather religious college’s campus. If the student is living on the campus and using computers and WiFi connections at the school, the school would presumably be able to see with a spoofed certificate everything that the student types. If the student appears to make searches that relate to the questioning of his faith, the school would have direct access to those searches and would be able to easily attempt to question them and potentially remove them from classes, despite the fact that the student was trying to settle the matter of their faith personally.
@@ -59,7 +59,7 @@
 	  <p style="-40px"> Shabi, T., Hasson, E., Gravier, O., Hasson, E., Hasson, E., Avital, N., S.L., Lynch, B., & Lynch, B. (2019, December 29). What is MITM (Man in the Middle) Attack | Imperva. Learning Center. Retrieved August 25, 2022, from https://www.imperva.com/learn/application-security/man-in-the-middle-attack-mitm/ </p>
 	</div>
       </div>
-      <a href="https://neeraj-gogate.github.io/fingerprint.html"> <img src="git.png" alt="GitHub Logo" width="100" height="100" style="bottom:0px; right:0px; position:fixed;"> </a>
+      <a href="https://neeraj-gogate.github.io/fingerprint.html"> <img src="../../Images/git.png" alt="GitHub Logo" width="100" height="100" style="bottom:0px; right:0px; position:fixed;"> </a>
     </main>
   </body>
 </html>

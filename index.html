@@ -13,7 +13,7 @@
 	<li class="nav-item"> <a href="#dp" class="nav-link"> <i class="icon fa-solid fa-folder-open fa-2x"></i> <span class="link-text"> Why Digital Portfolio? </span>  </a> </li>
 	<li class="nav-item"> <a href="#classes" class="nav-link"> <i class="icon fa-solid fa-user-graduate fa-2x"></i> <span class="link-text"> Classes </span>  </a> </li>
 	<li class="nav-item"> <a href="#isp" class="nav-link"> <i class="icon fa-solid fa-diagram-project fa-2x"></i> <span class="link-text"> ISP </span> </a> </li>
-	<li class="nav-item"> <a href="fingerprint.html" class="nav-link"> <i class="icon fa-solid fa-fingerprint fa-2x"></i> <span class="link-text"> Fingerprinting </span> </a> </li>
+	<li class="nav-item"> <a href="CS-III/Essays/Fingerprints.html" class="nav-link"> <i class="icon fa-solid fa-fingerprint fa-2x"></i> <span class="link-text"> Fingerprinting </span> </a> </li>
 	<li class="nav-item"> <a href="#sources" class="nav-link"> <i class="icon fa-solid fa-link fa-2x"></i> <span class="link-text"> Sources </span> </a> </li>
       </ul>
     </nav>
@@ -50,12 +50,12 @@
 	  <h2 style="text-align:center"> Motivation </h2>
 	  <p style="text-align:center"> The reason for creating the game was that it would be quite a tricky project. Fighting games are often very technical and require a lot of intricate parts to be running smoothly. Additionally, the game development process is also pretty fun, so that also contributed to the reason behind making the game.</p>
 	  <h2 style="text-align:center"> Code Snippets </h2>
-	  <img src="image1.png" alt="Hitboxes" style="width:500px;height:350px;align-self:center;">
+	  <img src="Images/image1.png" alt="Hitboxes" style="width:500px;height:350px;align-self:center;">
 	  <p style="text-align:center"> The Hitboxes class functioned as a parent class template for hitboxes. The first function, OnTriggerEnter, would first determine whether there was a collision happening with the object that the hitbox was put on. It would then check to make sure that it is hitting another player’s hurtbox, so that it will know whether or not the opposing player should take damage. If it isn't a player, then the function terminates, but if it is, the OnHit function is activated. The OnHit function would then determine the amount of damage and knockback that should be done.
 	  </p>
-	  <img src="image3.png" alt="PlayerHitboxes" style="width:500px;height:300px; align-self:center;">
+	  <img src="Images/image3.png" alt="PlayerHitboxes" style="width:500px;height:300px; align-self:center;">
 	  <p style="text-align:center"> The PlayerHitboxes class functioned as a child of the Hitboxes class, and inherited its properties. This time instead of simply doing damage if a collision occurs in the OnHit function, the PlayerHitbox checks if the player's hitboxes are active or not. The other player should only get hurt for the duration of the move performed, so there needs to be a check for if the move is active. This is in the form of the SetActive function, which sets the PlayerHitbox active at the start of the move, and the DeActivate function which is called to deactivate the hitbox once the move is finished. </p>
-	  <img src="image2.png" alt="Moves" style="width:500px;height:330px;align-self:center; ">
+	  <img src="Images/image2.png" alt="Moves" style="width:500px;height:330px;align-self:center; ">
 	  <p style="text-align:center"> The Move class is used to simulate the movements a character can make to fight the other character. Whenever the specific key is pressed to do the move, the activate function is called. This function triggers the animation to happen, so it is visible which move is occurring, and moves the character however far the move is supposed to move them. It also sets the hitboxes active which need to be active. Lastly, it delays the deactivation of the hitboxes until the move is finished through the use of a Coroutine.</p>
 	  <h2 style="text-align:center"> Conclusion </h2>
 	  <p style="text-align:center"> Overall the game's main hiccups were the fact that the development process was largely taken up by the creation of models, so the amount that could be done on a code level was less than originally hoped. The game runs smoothly overall, and while there isn’t as much balance as a game like this should have, it functions for its purpose.</p>
@@ -69,7 +69,7 @@
 	  <a style="text-align:center" href="https://www.w3schools.com">General Info from W3Schools</a>  
 	</div>
       </div>
-      <a href="https://neeraj-gogate.github.io/"> <img src="git.png" alt="GitHub Logo" width="100" height="100" style="bottom:0px; right:0px; position:fixed;"> </a> 
+      <a href="https://neeraj-gogate.github.io/"> <img src="Images/git.png" alt="GitHub Logo" width="100" height="100" style="bottom:0px; right:0px; position:fixed;"> </a> 
     </main>
   </body>
 </html>
