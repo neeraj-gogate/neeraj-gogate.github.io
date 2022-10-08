@@ -14,8 +14,9 @@
 	<li class="nav-item"> <a href="#dp" class="nav-link"> <i class="icon fa-solid fa-diagram-project fa-2x"></i> <span class="link-text"> Flowchart </span>  </a> </li>
 	<li class="nav-item"> <a href="https://github.com/neeraj-gogate/Optimal-Sorting" class="nav-link"> <i class="icon fa-brands fa-github fa-2x"></i> <span class="link-text"> GitHub </span>  </a> </li>
 	<li class="nav-item"> <a href="https://docs.google.com/spreadsheets/d/1unyC68g51rsel25M3M_R3hD50W83XrZAkFtVoDcQIvI/edit#gid=458637415" class="nav-link"> <i class="icon fa-solid fa-chart-line fa-2x"></i> <span class="link-text"> Data Sheet </span>  </a> </li>
+	<li class="nav-item"> <a href="#isp-holder" class="nav-link"> <i class="icon fa-solid fa-arrow-up-a-z fa-2x"></i> <span class="link-text"> Sort Analysis</span> </a> </li>
 	<li class="nav-item"> <a href="index.html" class="nav-link"> <i class="icon fa-solid fa-house fa-2x"></i> <span class="link-text"> Projects Home</span> </a> </li>
-      </ul>
+</ul>
     </nav>
     <main>
       <div id="home" class="section">
@@ -37,7 +38,20 @@
       <div id="dp" class="section">
 	<div id="dp-holder" class="holder">
 		<h1 style="text-align:center"> Flowchart</h1>
-	  	<img src = "../../Images/Sorting_Flowchart.jpg" alt="Sorting Flowchart"/>
+	  	<img src = "../../Images/Sorting_Formatted.jpg" alt="Sorting Flowchart"/>
+	</div>
+	</div>
+	<div id="isp" class="section">
+	<div id="isp-holder" class="holder">
+		<h1 style="text-align:center"> Sort Analysis</h1>
+		<a style="margin:inherit" href="https://docs.google.com/spreadsheets/d/1VHT-fU2OQpBjL0-hQtebKxltzDraoZ1JaJGBhOn6c98/edit#gid=756502430"> Data Spreadsheet</a>
+		<a style="margin:inherit" href="https://github.com/neeraj-gogate/Bubble-Sort"> Bubble Sort</a>
+		<a style="margin:inherit" href="https://github.com/neeraj-gogate/Insertion-Sort"> Insertion Sort</a>
+		<a style="margin:inherit" href="https://github.com/neeraj-gogate/Selection-Sort"> Selection Sort</a>
+		<p style="text-align: center;"> The sorting algorithms all have an average time complexity of O(n^2), which essentially means that the average time functions of the algorithms are all quadratic with respect to the number of elements. This results in all of the plotted functions having a roughly quadratic curve of best fit, as the highest term in the function should be on average some multiple of n^2. Despite this, certain algorithms fare better than other ones when you vary the relative order of the files. Namely, Bubble Sort and Insertion Sort were able to go much faster when the files were already sorted. This is because both of these algorithms have ways to be O(n) through them not making any extraneous comparisons and absolutely no swaps, something that selection sort can’t do. This contributes to Selection Sort being overall worse than both of these algorithms, as it is unable to make optimizations to know when it is sorted.
+		</p>
+		<p style="text-align:center;"> Despite the fact that these languages have certain strengths over each other, they are overall extremely slow. Most of the tests reached the point of being over a second at a mere 10,000, and all but Insertion Sort for the Ordered file reached a point of timing out at 100,000 words. This makes them incredibly impractical and frankly impossible to use in any modern application or webpage. They are simply just too slow, and they would cause the total dismantlement of simple problems and applications. There are simply too many better alternatives to these algorithms. Despite this, however, they are still incredibly important on a conceptual level. They are rather simple when compared to algorithms such as merge sort or quick sort, and thus provide more of a measurable gauge as to what and what doesn’t work in a sorting algorithm. 
+		</p>
 	</div>
       </div>
       <a href="https://neeraj-gogate.github.io/CS-III/Projects/Optimal%20Sorting.html"> <img src="../../Images/git.png" alt="GitHub Logo" width="100" height="100" style="bottom:0px; right:0px; position:fixed;"> </a>
